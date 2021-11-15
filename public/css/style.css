@@ -1,0 +1,235 @@
+body{
+    color: black !important;
+    
+}
+
+.carousel-inner .carousel-item > img {
+    -webkit-animation: thing 20s;
+    -o-animation: thing 20s;
+    animation: thing 20s; 
+  }
+  @keyframes thing {
+    from {
+       transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }
+
+
+
+#navbar{
+    padding: 40px !important;
+    background-color: #600080 !important;
+
+}
+.navbar-nav a{
+    color: #fff !important;
+    padding: 20px !important;
+}
+.navbar-nav a:hover{
+    border-bottom: 2px solid #fff;
+    
+
+}
+.navbar-nav i{
+    color: #fff !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    
+}
+#navigation{
+    text-align: center !important;
+    background-color:#39004d !important;
+}
+#search{
+    border: none;
+    border-radius: 20px !important;
+}
+#search-addon .ico{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    color: #fff;
+}
+.card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#e{
+  margin-top: 10px;
+}
+.carouselDarkVariant{
+    position: absolute;
+}
+#mid-bar{
+    border-top: 4px solid #39004d;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+#mid-bar h6{
+    color: #39004d;
+}
+#mid-bar H5{
+    margin-bottom: 20px;
+}
+.bishop{
+    margin-top: 50px;
+}
+H5{
+    color: black;
+    margin-bottom: 40px;
+}
+#mid-bar a{
+    color: #9900cc;
+}
+.bar{
+    margin-top: 40px;
+    text-align: center;
+}
+.events .card{
+    border-radius: 0px;
+    margin-bottom: 10px;
+
+}
+.core{
+    height: 100%;
+    font-size: 15px;
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+}
+.events{
+    margin-top: 50px;
+}
+.date{
+    margin-bottom: 0px !important;
+    text-align: center;
+    border:2px solid #b39e00;
+}
+h4{
+    margin-bottom: 0px;
+    color: black;
+}
+.date span{
+    font-size: 12px;
+    color: #9900cc;
+}
+#event-card{
+    padding: 1.4rem;
+}
+#event-card i{
+    color: #b39e00;
+}
+.location{
+    float: right;
+    color: #595959;
+}
+.dropdown-menu{
+    border-radius: 0px;
+}
+.dropdown-menu li a{
+ color: #9900cc !important;
+}
+.dropdown-menu li a:hover{
+    color: #fff !important;
+    background-color: #9900cc;
+}
+.dropdown-menu>li:first-child, .dropdown-menu>li:first-child .dropdown-item{
+    border-radius: 0px !important;
+}
+.dropdown-menu>li:last-child, .dropdown-menu>li:last-child .dropdown-item{
+    border-radius: 0px !important;
+}
+.carousel-caption {
+    text-align: left !important;
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.7rem;
+    width: 30%;
+    border-radius: 4px;
+    border-left: 2px solid #9900cc;
+    font-size: small !important;
+
+}
+.carousel-caption h4{
+    color: #fff !important;
+    font-size: medium !important;
+}
+.event .card-body{
+    text-align: center !important;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+* {
+  box-sizing: border-box;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 17rem);
+  gap: 2rem;
+}
+
+.item {
+  position: relative;
+  height: 14rem;
+  background-color: lightGrey;
+  overflow-y: hidden;
+  margin-bottom: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.item h3 {
+  margin: 0;
+  display: block;
+  background-color: #39004d;
+  padding: 1rem;
+  text-align: center;
+  color: #fff !important;
+}
+.item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.item a:hover ~ .item__overlay, .item a:focus ~ .item__overlay {
+  transform: translate3d(0, 0, 0);
+}
+
+#img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.item__overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  color: #fff !important;
+  transition: transform 300ms;
+  background-color: #39004d;
+  transform: translate3d(0, calc(100% - 3.5rem), 0);
+}
+
+.item__body {
+  flex-grow: 1;
+  padding: 1rem;
+}
+.item__body p {
+  margin: 0;
+}
+@media screen and (max-width: 320px){
+    body {
+        font-size: 3vw }}
